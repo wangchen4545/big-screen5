@@ -1,0 +1,210 @@
+/** @format */
+
+// 1. 声明字体
+@font-face {
+	font-family: "digital";
+	src: url("./font/digital-7.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; // 性能优化
+}
+@font-face {
+	font-family: "Gotthard";
+	src: url("./font/Gotthard.TTF") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; // 性能优化
+}
+@font-face {
+	font-family: "jdlangzhengti";
+	src: url("./font/jdlangzhengti.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; // 性能优化
+}
+@font-face {
+	font-family: "PlusJakartaSans-SemiBoldItalic";
+	src: url("./font/PlusJakartaSans-SemiBoldItalic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; // 性能优化
+}
+// 2. 直接使用
+body {
+	font-family: "Poppins", sans-serif;
+}
+.data-page {
+	width: 15360px;
+	height: 2160px;
+	background: #0d2c46 url("./img/05_background.webp") no-repeat;
+	position: relative;
+	.bg {
+		position: absolute;
+		z-index: 1;
+		background: #000;
+		height: 2160px;
+		width: 15360px;
+		left: 0;
+		top: 0;
+		opacity: 0;
+	}
+	.title {
+		display: flex;
+		justify-content: space-between;
+		width: 6480px;
+		height: 160px;
+		margin: auto;
+		padding-top: 40px;
+		position: relative;
+		z-index: 2;
+		.updata {
+			.updata-s1 {
+				width: 204px;
+				height: 56px;
+				font-family: AlibabaPuHuiTi, AlibabaPuHuiTi;
+				font-weight: 400;
+				font-size: 48px;
+				color: #d1eeff;
+				line-height: 56px;
+				text-shadow: 0px 0px 16px rgba(0, 60, 124, 0.5);
+				text-align: left;
+				font-style: normal;
+			}
+			.updata-s2 {
+				width: 496px;
+				height: 56px;
+				font-family: Gotthard;
+				font-size: 56px;
+				color: #d1eeff;
+				line-height: 56px;
+				letter-spacing: 4px;
+				text-shadow: 0px 0px 16px rgba(0, 60, 124, 0.5);
+				text-align: left;
+				font-style: normal;
+				margin-left: 36px;
+			}
+		}
+		.title-text {
+			width: 1776px;
+			height: 136px;
+			font-family: jdlangzhengti, jdlangzhengti;
+			font-weight: normal;
+			font-size: 136px;
+			color: #ffffff;
+			line-height: 56px;
+			letter-spacing: 12px;
+			text-shadow: 0px 16px 0px rgba(27, 53, 79, 0.4);
+			text-align: center;
+			font-style: normal;
+			padding-top: 24px;
+			/* 	background: linear-gradient(270deg, #d1eeff 0%, #ffffff 100%); */
+		}
+		.time {
+			width: 1000px;
+			.icon {
+				width: 48px;
+				height: 48px;
+			}
+			.time-s1,
+			.time-s2 {
+				width: 496px;
+				height: 56px;
+				font-family: Gotthard;
+				font-size: 56px;
+				color: #d1eeff;
+				line-height: 56px;
+				letter-spacing: 4px;
+				text-shadow: 0px 0px 16px rgba(0, 60, 124, 0.5);
+				text-align: left;
+				font-style: normal;
+			}
+			.time-s2 {
+				margin-left: 68px;
+			}
+		}
+	}
+	.drak-light {
+		position: absolute;
+		z-index: 3;
+		left: 12864px;
+		top: 184px;
+
+		.drak-light-switch {
+			cursor: pointer;
+			width: 320px;
+			height: 96px;
+			background: url("./img/switch2_d@4x.png") no-repeat;
+		}
+		.drak-light-switch1 {
+			background: url("./img/switch2_n@4x.png") no-repeat;
+		}
+		ul {
+			position: absolute;
+			left: 50%;
+			top: 90px;
+			width: 240px;
+			/* height: 544px; */
+			background: rgba(8, 16, 22, 0.9);
+			border-radius: 16px;
+			border: 4px solid #5e9dbf;
+			padding-bottom: 16px;
+			li {
+				width: 208px;
+				height: 96px;
+				background: transparent;
+				border-radius: 8px;
+				margin: 16px 16px 0 16px;
+				font-family: PingFangSC, PingFang SC;
+				font-weight: 400;
+				font-size: 40px;
+				color: #7fb5d9;
+				line-height: 40px;
+				text-align: center;
+				font-style: normal;
+				line-height: 96px;
+				cursor: pointer;
+				&:hover {
+					background: #1e5a86;
+				}
+			}
+			.active {
+				background: #1e5a86;
+				color: #c5e4f9;
+			}
+		}
+	}
+	.chart-wrap {
+		display: flex;
+		margin-left: 168px;
+		margin-right: 168px;
+		position: relative;
+		z-index: 2;
+		.chart1 {
+			width: 1752px;
+			height: 1776px;
+		}
+		.chart2 {
+			width: 3672px;
+			height: 1592px;
+			margin-top: 240px;
+			margin-left: 128px;
+		}
+		.chart3 {
+			width: 3672px;
+			height: 1592px;
+			margin-top: 240px;
+			margin-left: 128px;
+		}
+		.chart4 {
+			width: 3672px;
+			height: 1592px;
+			margin-top: 240px;
+			margin-left: 128px;
+		}
+		.chart5 {
+			width: 1752px;
+			height: 856px;
+			margin-left: 128px;
+		}
+	}
+}

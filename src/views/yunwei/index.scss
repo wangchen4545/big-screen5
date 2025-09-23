@@ -1,0 +1,57 @@
+/** @format */
+
+.yunwei {
+	width: 15360px;
+	height: 2160px;
+	background: #0d2c46 url("./img/01_background.webp") no-repeat;
+	position: relative;
+}
+* {
+	margin: 0;
+}
+.yunwei {
+	.left-content {
+		width: 5792px;
+		height: calc(2160px - 196px);
+		padding-left: 225px;
+		.min-title {
+			height: 160px;
+			font-family: JDLANGZHENGTI--GB1, JDLANGZHENGTI--GB1;
+			font-weight: normal;
+			font-size: 72px;
+			color: #ffffff;
+			line-height: 160px;
+			letter-spacing: 4px;
+			text-align: left;
+			font-style: normal;
+			padding-left: 236px;
+			display: flex;
+			align-items: center;
+			> p {
+				position: relative;
+				span {
+					height: 32px;
+					font-family: PlusJakartaSans-Italic_SemiBold, PlusJakartaSans-Italic_SemiBold;
+					font-size: 32px;
+					color: #7fb5d9;
+					line-height: 32px;
+					text-align: left;
+				}
+			}
+		}
+		.top1-content {
+			display: flex;
+			justify-content: space-between;
+		}
+		.top-left1 {
+			width: 2640px;
+			height: 896px;
+			background: rbga(255, 255, 255, 0.2);
+		}
+		.top-left2 {
+			width: 2640px;
+			height: 896px;
+			background: rbga(255, 255, 255, 0.2);
+		}
+	}
+}
