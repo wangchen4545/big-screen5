@@ -3,28 +3,28 @@
 // 1. 声明字体
 @font-face {
 	font-family: "digital";
-	src: url("./font/digital-7.ttf") format("truetype");
+	src: url("@/assets/font/digital-7.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap; // 性能优化
 }
 @font-face {
 	font-family: "Gotthard";
-	src: url("./font/Gotthard.TTF") format("truetype");
+	src: url("@/assets/font/Gotthard.TTF") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap; // 性能优化
 }
 @font-face {
 	font-family: "jdlangzhengti";
-	src: url("./font/jdlangzhengti.ttf") format("truetype");
+	src: url("@/assets/font/jdlangzhengti.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap; // 性能优化
 }
 @font-face {
 	font-family: "PlusJakartaSans-SemiBoldItalic";
-	src: url("./font/PlusJakartaSans-SemiBoldItalic.ttf") format("truetype");
+	src: url("@/assets/font/PlusJakartaSans-SemiBoldItalic.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap; // 性能优化

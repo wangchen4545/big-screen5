@@ -1,25 +1,3 @@
-<!-- @format -->
-
-<template>
-	<div
-		ref="gauge"
-		class="gauge"
-		id="gauge"
-	></div>
-</template>
-
-<script>
-import * as echarts from 'echarts'
-export default {
-    name: "gaugeChart",
-
-    data () {
-        return {
-        }
-    },
-    methods: {
-        initChart () {
-            const chart = echarts.init(this.$refs.gauge)
 
 
 const drawChartOption = function (value, max) {
@@ -51,7 +29,7 @@ const drawChartOption = function (value, max) {
             x2: 1, //左
             y2: 0, //上
             colorStops: [
-
+               
                {
                   offset: 0,
                   color: 'rgba(127, 181, 217, 0)'
@@ -70,6 +48,7 @@ const drawChartOption = function (value, max) {
    const { name, colorList } = colorConfig;
 
    const option = {
+      backgroundColor: '#000',
       tooltip: {
          formatter(params) {
             if (params) {
@@ -84,39 +63,47 @@ const drawChartOption = function (value, max) {
          color: '#ffffff',
          show:false
       },
-
+      grid: {
+         left: '2%',
+         right: '2%',
+         bottom: '2%',
+         top: '2%',
+         containLabel: false
+      },
       series: [
          //由外往内第一层线色部分
          {
             type: 'pie',
-            center: ['49.5%', '50%'],
-            radius: ['98%', '99%'],
+            center: ['49.5%', '64%'],
+            radius: ['81%', '82%'],
             startAngle: 180,
             endAngle: 0,
             zlevel: 2,
+            emptyCircleStyle: {
+               color: 'transparent'
+            },
             axisTick : {
-              show : true,
-
+              show : true
             },
             axisLine:{
                show: false,
-
+               
             },
             tooltip: {
-               show: false
+               show: true
             },
             label: {
-               show: false
+               show: true
             },
             emphasis: {
                scale: false
             },
             labelLine: {
-               show: false
+               show: true
             },
             data: [
                {
-                  value: 360,
+                  value: 180,
                   itemStyle: {
                      color: {
                         type: 'linear',
@@ -137,14 +124,20 @@ const drawChartOption = function (value, max) {
                      }
                   }
                },
-
+               {
+                  value: 180,
+                  itemStyle: {
+                     opacity: 0,
+                     color: 'transparent'
+                  }
+               }
             ]
          },
          //由外往内第二层线色部分
          {
             type: 'gauge',
-            center: ['49.5%', '50%'],
-            radius: '89%',
+            center: ['49.5%', '64%'],
+            radius: '72%',
             startAngle: 180,
             endAngle: 0,
             min: 0,
@@ -161,9 +154,9 @@ const drawChartOption = function (value, max) {
                roundCap: false,
                width: 20
             },
-
+           
             detail: {
-               offsetCenter: [0, '-20%'], // title圆环中心的距离
+               offsetCenter: [0, '-4%'], // title圆环中心的距离
                color: colorList.text,
                textAlign: 'center',
                fontSize: 96,
@@ -181,10 +174,10 @@ const drawChartOption = function (value, max) {
                       fontSize: '44px',
                       color: '#C5E4F9',
                       textAlign: 'center',
-
+                      
                   },
-
-
+                  
+                 
               }
             },
             axisLabel: {
@@ -262,8 +255,8 @@ const drawChartOption = function (value, max) {
          //由外往内第三层渐变部分
          {
             type: 'gauge',
-            radius: '84%',
-            center: ['49.5%', '50%'],
+            radius: '68%',
+            center: ['49.5%', '64%'],
             min: 0,
             max: 100,
             zlevel: 4,
@@ -329,8 +322,8 @@ const drawChartOption = function (value, max) {
          },
          {
             type: 'gauge',
-            center: ['49.5%', '50%'],
-            radius: '65%',
+            center: ['49.5%', '64%'],
+            radius: '48%',
             min: 0,
             max: 100,
             zlevel: 8,
@@ -356,7 +349,7 @@ const drawChartOption = function (value, max) {
             },
             pointer: {
                show: true,
-               length: 105,
+               length: 100,
                width: 4,
                icon: 'rect',
                offsetCenter: [0, '-100%'],
@@ -376,21 +369,4 @@ const drawChartOption = function (value, max) {
 const options = drawChartOption(50, 100)
 
 
-
-            chart.setOption(options)
-        }
-    },
-    mounted () {
-        this.initChart()
-
-    }
-}
-</script>
-
-<style lang="scss" scoped>
-#gauge {
-    width: 100%;
-    height: 1024px;
-
-}
-</style>
+option = options
