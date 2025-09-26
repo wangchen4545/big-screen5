@@ -33,6 +33,16 @@ const routes = [
 		name: "yunwei",
 		component: () => import(/* webpackChunkName: "about" */ "../views/yunwei/index.vue"),
 	},
+	{
+		path: "/ywfwBox",
+		name: "ywfwBox",
+		component: () => import(/* webpackChunkName: "about" */ "../views/ywfwBox/index.vue"),
+	},
+	{
+		path: "/yunXingQingKuang",
+		name: "yunXingQingKuang",
+		component: () => import(/* webpackChunkName: "about" */ "../views/yunXingQingKuang/index.vue"),
+	},
 ];
 
 const router = new VueRouter({
