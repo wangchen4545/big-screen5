@@ -33,6 +33,11 @@ const routes = [
 		name: "yunwei",
 		component: () => import(/* webpackChunkName: "about" */ "../views/yunwei/index.vue"),
 	},
+	{
+		path: "/yunxing",
+		name: "yunxing",
+		component: () => import(/* webpackChunkName: "about" */ "../views/yunxing/index.vue"),
+	},
 ];
 
 const router = new VueRouter({

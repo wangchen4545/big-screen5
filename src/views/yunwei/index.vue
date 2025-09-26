@@ -175,7 +175,9 @@
 				</div>
 			</div>
 			<!-- 中间 -->
-			<div class="center-chart"></div>
+			<div class="center-chart">
+				<centerPie></centerPie>
+			</div>
 			<!--  -->
 			<div class="t-zhichi">
 				<div class="title">
@@ -487,6 +489,7 @@ import barChart from './components/bar.vue';
 import computer from './components/computer.vue';
 import errorChart from './components/errorChart.vue';
 import gauge from './components/gauge.vue';
+import centerPie from './components/centerPie.vue';
 
 export default {
     name: "yunWei",
@@ -495,7 +498,8 @@ export default {
 		barChart,
 		computer,
 		errorChart,
-		gauge
+		gauge,
+		centerPie
     },
     data() {
 		return {

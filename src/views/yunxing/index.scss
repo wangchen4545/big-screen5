@@ -1,0 +1,62 @@
+/** @format */
+@font-face {
+	font-family: "digital";
+	src: url("@/assets/font/digital-7.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; // 性能优化
+}
+@font-face {
+	font-family: "Gotthard";
+	src: url("@/assets/font/Gotthard.TTF") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; // 性能优化
+}
+@font-face {
+	font-family: "jdlangzhengti";
+	src: url("@/assets/font/jdlangzhengti.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; // 性能优化
+}
+@font-face {
+	font-family: "PlusJakartaSans-SemiBoldItalic";
+	src: url("@/assets/font/PlusJakartaSans-SemiBoldItalic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap; // 性能优化
+}
+.yunxing {
+	width: 15360px;
+	margin: auto;
+	height: 2160px;
+	background: url(./img/02_background.webp) no-repeat;
+}
+.yunxing-content {
+	.min-title {
+		height: 160px;
+		font-family: jdlangzhengti, jdlangzhengti;
+		font-weight: normal;
+		font-size: 72px;
+		color: #ffffff;
+		line-height: 160px;
+		letter-spacing: 4px;
+		text-align: left;
+		font-style: normal;
+		padding-left: 236px;
+		display: flex;
+		align-items: center;
+		> p {
+			position: relative;
+			span {
+				height: 32px;
+				font-family: PlusJakartaSans-Italic_SemiBold, PlusJakartaSans-Italic_SemiBold;
+				font-size: 32px;
+				color: #7fb5d9;
+				line-height: 32px;
+				text-align: left;
+			}
+		}
+	}
+}

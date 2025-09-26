@@ -58,8 +58,6 @@ export default {
 
 <style lang="scss" scoped>
 .title {
-		display: flex;
-		justify-content: space-between;
 		width: 6480px;
 		height: 160px;
 		margin: auto;
@@ -67,6 +65,11 @@ export default {
 		position: relative;
 		z-index: 2;
 		.updata {
+			width: 736px;
+			position: absolute;
+			left: 0;
+			top:40px;
+
 			.updata-s1 {
 				width: 204px;
 				height: 56px;
@@ -94,7 +97,6 @@ export default {
 			}
 		}
 		.title-text {
-			width: 1776px;
 			height: 136px;
 			font-family: jdlangzhengti, jdlangzhengti;
 			font-weight: normal;
@@ -110,6 +112,10 @@ export default {
 		}
 		.time {
 			width: 1000px;
+			position: absolute;
+			right: 0;
+			top:40px;
+
 			.icon {
 				width: 48px;
 				height: 48px;
