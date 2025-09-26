@@ -34,6 +34,16 @@ const routes = [
 		component: () => import(/* webpackChunkName: "about" */ "../views/yunwei/index.vue"),
 	},
 	{
+		path: "/ywfwBox",
+		name: "ywfwBox",
+		component: () => import(/* webpackChunkName: "about" */ "../views/ywfwBox/index.vue"),
+	},
+	{
+		path: "/yunXingQingKuang",
+		name: "yunXingQingKuang",
+		component: () => import(/* webpackChunkName: "about" */ "../views/yunXingQingKuang/index.vue"),
+	},
+	{
 		path: "/yunxing",
 		name: "yunxing",
 		component: () => import(/* webpackChunkName: "about" */ "../views/yunxing/index.vue"),
