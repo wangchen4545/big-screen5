@@ -27,6 +27,11 @@
 	font-style: normal;
 	font-display: swap; // 性能优化
 }
+h3,
+p {
+	padding: 0;
+	margin: 0;
+}
 .yunxing {
 	width: 15360px;
 	margin: auto;
@@ -34,6 +39,9 @@
 	background: url(./img/02_background.webp) no-repeat;
 }
 .yunxing-content {
+	width: 2064px;
+	height: 1880px;
+	margin-left: 228px;
 	.min-title {
 		height: 160px;
 		font-family: jdlangzhengti, jdlangzhengti;
@@ -56,6 +64,172 @@
 				color: #7fb5d9;
 				line-height: 32px;
 				text-align: left;
+			}
+		}
+	}
+	.m-title {
+		margin-top: 32px;
+	}
+	.distribution {
+		height: 2044px;
+		height: 572px;
+		.info {
+			height: 348px;
+			display: flex;
+			.total,
+			.level {
+				width: 960px;
+				height: 348px;
+				h3 {
+					padding-top: 96px;
+					height: 96px;
+					font-family: Gotthard;
+					font-size: 96px;
+					color: #ffffff;
+					line-height: 96px;
+					text-shadow: 0px 0px 40px rgba(75, 199, 255, 0.3);
+					text-align: left;
+					font-style: normal;
+				}
+				p {
+					height: 44px;
+					font-family: PingFangSC, PingFang SC;
+					font-weight: 400;
+					font-size: 44px;
+					color: #c5e4f9;
+					line-height: 44px;
+					font-style: normal;
+					padding-top: 32px;
+					text-align: left;
+				}
+			}
+			.level {
+				width: auto;
+			}
+		}
+		.rota {
+			.scale {
+				height: 25px;
+			}
+			.scale0 {
+				background-color: #ff6e38;
+			}
+			.scale1 {
+				background-color: #e4c85d;
+			}
+			.scale2 {
+				background-color: #4be7ff;
+			}
+			.scale3 {
+				background-color: #30a8fa;
+			}
+			.scale4 {
+				background-color: #7fb5d9;
+			}
+			.describe {
+				display: flex;
+				height: 60px;
+				margin-top: 40px;
+				align-items: baseline;
+				.legend {
+					width: 32px;
+					height: 32px;
+					background: #000;
+					transform: rotate(45deg);
+				}
+				.legend0 {
+					background: #ff6e38;
+				}
+				.legend1 {
+					background: #e4c85d;
+				}
+				.legend2 {
+					background: #4be7ff;
+				}
+				.legend3 {
+					background: #30a8fa;
+				}
+				.legend4 {
+					background: #7fb5d9;
+				}
+				.txt1 {
+					font-size: 40px;
+					color: #7fb5d9;
+					margin: 0 40px;
+					font-family: PingFangSC, PingFang SC;
+				}
+				.txt2 {
+					font-size: 40px;
+					color: #fff;
+					font-family: Gotthard;
+				}
+			}
+		}
+	}
+	.fenxi {
+		width: 2064px;
+		height: 988px;
+		padding-top: 128px;
+		.fenxi-content {
+			position: relative;
+			padding-top: 73px;
+
+			.data {
+				width: 880px;
+				height: 352px;
+				position: absolute;
+				display: flex;
+				align-items: center;
+				p {
+					width: 232px;
+					height: 56px;
+					font-family: JDLANGZHENGTI--GB1, JDLANGZHENGTI--GB1;
+					font-weight: normal;
+					font-size: 56px;
+					color: #c5e4f9;
+					line-height: 56px;
+					text-align: left;
+					font-style: normal;
+				}
+				h3 {
+					width: 188px;
+					height: 64px;
+					font-family: Gotthard;
+					font-size: 64px;
+					color: #ffffff;
+					line-height: 64px;
+					text-align: left;
+					font-style: normal;
+				}
+			}
+			.data1 {
+				left: 0;
+				top: 73px;
+				padding-left: 272px;
+				background: url("./img/icon-data1.png") no-repeat;
+				background-position: 36px center;
+			}
+			.data2 {
+				left: 0;
+				top: 490px;
+				padding-left: 272px;
+				background: url("./img/icon-data2.png") no-repeat;
+				background-position: 36px center;
+			}
+			.data3 {
+				right: 0;
+				top: 190px;
+				padding-left: 428px;
+				box-sizing: border-box;
+				width: 724px;
+				height: 560px;
+				background: url("./img/icon-data3.png") no-repeat;
+				background-position: 192px center;
+			}
+			.fenxi-chart {
+				margin: 112px auto 0;
+				width: 720px;
+				height: 720px;
 			}
 		}
 	}
