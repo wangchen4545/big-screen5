@@ -39,9 +39,10 @@ p {
 	background: url(./img/02_background.webp) no-repeat;
 }
 .yunxing-content {
-	width: 2064px;
+	width: 15360px;
 	height: 1880px;
 	margin-left: 228px;
+	display: flex;
 	.min-title {
 		height: 160px;
 		font-family: jdlangzhengti, jdlangzhengti;
@@ -107,62 +108,62 @@ p {
 				width: auto;
 			}
 		}
-		.rota {
-			.scale {
-				height: 25px;
+	}
+	.rota {
+		.scale {
+			height: 25px;
+		}
+		.scale0 {
+			background-color: #ff6e38;
+		}
+		.scale1 {
+			background-color: #e4c85d;
+		}
+		.scale2 {
+			background-color: #4be7ff;
+		}
+		.scale3 {
+			background-color: #30a8fa;
+		}
+		.scale4 {
+			background-color: #7fb5d9;
+		}
+		.describe {
+			display: flex;
+			height: 60px;
+			margin-top: 40px;
+			align-items: baseline;
+			.legend {
+				width: 32px;
+				height: 32px;
+				background: #000;
+				transform: rotate(45deg);
 			}
-			.scale0 {
-				background-color: #ff6e38;
+			.legend0 {
+				background: #ff6e38;
 			}
-			.scale1 {
-				background-color: #e4c85d;
+			.legend1 {
+				background: #e4c85d;
 			}
-			.scale2 {
-				background-color: #4be7ff;
+			.legend2 {
+				background: #4be7ff;
 			}
-			.scale3 {
-				background-color: #30a8fa;
+			.legend3 {
+				background: #30a8fa;
 			}
-			.scale4 {
-				background-color: #7fb5d9;
+			.legend4 {
+				background: #7fb5d9;
 			}
-			.describe {
-				display: flex;
-				height: 60px;
-				margin-top: 40px;
-				align-items: baseline;
-				.legend {
-					width: 32px;
-					height: 32px;
-					background: #000;
-					transform: rotate(45deg);
-				}
-				.legend0 {
-					background: #ff6e38;
-				}
-				.legend1 {
-					background: #e4c85d;
-				}
-				.legend2 {
-					background: #4be7ff;
-				}
-				.legend3 {
-					background: #30a8fa;
-				}
-				.legend4 {
-					background: #7fb5d9;
-				}
-				.txt1 {
-					font-size: 40px;
-					color: #7fb5d9;
-					margin: 0 40px;
-					font-family: PingFangSC, PingFang SC;
-				}
-				.txt2 {
-					font-size: 40px;
-					color: #fff;
-					font-family: Gotthard;
-				}
+			.txt1 {
+				font-size: 40px;
+				color: #7fb5d9;
+				margin: 0 40px;
+				font-family: PingFangSC, PingFang SC;
+			}
+			.txt2 {
+				font-size: 40px;
+				color: #fff;
+				font-family: Gotthard;
 			}
 		}
 	}
@@ -230,6 +231,204 @@ p {
 				margin: 112px auto 0;
 				width: 720px;
 				height: 720px;
+			}
+		}
+	}
+	.nian-guzhang {
+		width: 2064px;
+		height: 896px;
+		margin-left: 160px;
+		.min-title {
+		}
+		.info {
+			padding-top: 32px;
+			display: flex;
+
+			.info-left {
+				width: 544px;
+				height: 128px;
+				display: flex;
+				padding-top: 32px;
+				padding-left: 32px;
+				> div {
+					width: 312px;
+					p {
+						width: 200px;
+						height: 48px;
+						font-family: PingFangSC, PingFang SC;
+						font-weight: 400;
+						font-size: 48px;
+						color: #7fb5d9;
+						line-height: 48px;
+						text-align: left;
+						font-style: normal;
+					}
+					h3 {
+						width: 64px;
+						height: 64px;
+						font-family: Gotthard;
+						font-size: 64px;
+						color: #ffffff;
+						line-height: 64px;
+						text-align: left;
+						font-style: normal;
+						padding-top: 16px;
+					}
+				}
+				div:nth-child(2) {
+					padding-left: 112px;
+				}
+			}
+			.rota {
+				.describe {
+					.txt1 {
+						font-size: 40px;
+						color: #7fb5d9;
+						margin: 0 60px 0 16px;
+						font-family: PingFangSC, PingFang SC;
+					}
+				}
+			}
+			.info-right {
+				width: 1388px;
+				.legend-box {
+					display: flex;
+					.describe {
+						display: flex;
+						height: 60px;
+						margin-top: 40px;
+						align-items: baseline;
+					}
+					.legend {
+						width: 32px;
+						height: 32px;
+						background: #000;
+						transform: rotate(45deg);
+					}
+					.legend0 {
+						background: #ff6e38;
+					}
+					.legend1 {
+						background: #e4c85d;
+					}
+					.legend2 {
+						background: #4be7ff;
+					}
+					.legend3 {
+						background: #30a8fa;
+					}
+					.legend4 {
+						background: #7fb5d9;
+					}
+					.txt1 {
+						font-size: 40px;
+						color: #7fb5d9;
+						margin: 0 40px;
+						font-family: PingFangSC, PingFang SC;
+					}
+					.txt2 {
+						font-size: 40px;
+						color: #fff;
+						font-family: Gotthard;
+					}
+				}
+			}
+		}
+		.bar-chart-box {
+			width: 2032px;
+			height: 480px;
+			margin-top: 56px;
+		}
+		.gaojing {
+			margin-top: 80px;
+		}
+		.gaojing-content {
+			display: flex;
+			justify-content: space-between;
+			.gaojing-left-data,
+			.gaojing-right-data {
+				margin-top: 32px;
+				ul {
+					margin-top: 64px;
+
+					li {
+						height: 160px;
+						width: 640px;
+						box-sizing: border-box;
+						display: flex;
+						padding-left: 128px;
+						padding-top: 56px;
+						background: linear-gradient(270deg, rgba(44, 87, 122, 0.05) 0%, rgba(44, 87, 122, 0.25) 100%);
+						border-radius: 8px;
+						padding-right: 64px;
+						justify-content: space-between;
+						.p1 {
+							height: 48px;
+							font-family: PingFangSC, PingFang SC;
+							font-weight: 400;
+							font-size: 48px;
+							color: #7fb5d9;
+							line-height: 48px;
+							text-align: left;
+							font-style: normal;
+						}
+						.p2 {
+							height: 48px;
+							font-family: Gotthard;
+							font-size: 48px;
+							color: #ffffff;
+							line-height: 48px;
+							text-shadow: 0px 0px 32px rgba(75, 199, 255, 0.5);
+							text-align: right;
+							font-style: normal;
+							text-align: right;
+						}
+					}
+					li:nth-child(1) {
+						margin-bottom: 22px;
+						.p1 {
+							position: relative;
+						}
+						img {
+							position: absolute;
+							left: -100px;
+							top: -84%;
+						}
+					}
+					li:nth-child(2) {
+						margin-bottom: 32px;
+						position: relative;
+						span {
+							position: absolute;
+							left: 64px;
+							top: 50%;
+							margin-top: -12px;
+							width: 24px;
+							height: 24px;
+							background: #52dc8d;
+							border-radius: 50%;
+						}
+					}
+					li:nth-child(3) {
+						margin-bottom: 32px;
+						position: relative;
+						span {
+							position: absolute;
+							left: 64px;
+							top: 50%;
+							margin-top: -12px;
+							width: 24px;
+							height: 24px;
+							background: #ff6e6e;
+							border-radius: 50%;
+						}
+					}
+				}
+			}
+			.gaojing-center-data {
+				width: 416px;
+				height: 416px;
+				padding-top: 224px;
 			}
 		}
 	}

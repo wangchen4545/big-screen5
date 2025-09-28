@@ -112,6 +112,109 @@
 					</div>
 				</div>
 			</div>
+			<!-- 年故障 -->
+			<div class="nian-guzhang">
+				<div class="min-title">
+					<p>本年故障趋势 <span>FAULT TREND</span></p>
+				</div>
+				<div class="info">
+					<div class="info-left">
+						<div>
+							<p>今日故障</p>
+							<h3>7</h3>
+						</div>
+						<div>
+							<p>已处理</p>
+							<h3>7</h3>
+						</div>
+					</div>
+					<div class="info-right">
+						<!-- 例子 -->
+						<div class="legend-box">
+							<!-- 文字描述 -->
+							<div class="describe">
+								<div class="legend legend0"></div>
+								<span class="txt1">一级故障</span>
+							</div>
+							<div class="describe">
+								<div class="legend legend1"></div>
+								<span class="txt1">二级故障</span>
+							</div>
+							<div class="describe">
+								<div class="legend legend2"></div>
+								<span class="txt1">三级故障</span>
+							</div>
+							<div class="describe">
+								<div class="legend legend3"></div>
+								<span class="txt1">四级故障</span>
+							</div>
+							<div class="describe">
+								<div class="legend legend4"></div>
+								<span class="txt1">五级故障</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bar-chart-box">
+					<guzhangBar></guzhangBar>
+				</div>
+				<div class="min-title gaojing">
+					<p>告警与调度 <span>ALERT AND DISPATCH STATUS</span></p>
+				</div>
+				<div class="gaojing-content">
+					<div class="gaojing-left-data">
+						<minMTitle :title="'告警情况'"></minMTitle>
+						<ul>
+							<li>
+								<p class="p1">
+									<span
+										><img
+											src="./img/arrows@4x.png"
+											alt=""
+									/></span>
+									总告警
+								</p>
+								<p class="p2">13</p>
+							</li>
+							<li>
+								<p class="p1"><span></span> 已恢复</p>
+								<p class="p2">03</p>
+							</li>
+							<li>
+								<p class="p1"><span></span> 未恢复</p>
+								<p class="p2">04</p>
+							</li>
+						</ul>
+					</div>
+					<div class="gaojing-center-data">
+						<jinggaoGauge></jinggaoGauge>
+					</div>
+					<div class="gaojing-right-data">
+						<minMTitle :title="'调度情况'"></minMTitle>
+						<ul>
+							<li>
+								<p class="p1">
+									<img
+										src="./img/arrows@4x.png"
+										alt=""
+									/>中级以上调度
+								</p>
+								<p class="p2">13</p>
+							</li>
+							<li>
+								<p class="p1">高级调度</p>
+								<p class="p2">03</p>
+							</li>
+							<li>
+								<p class="p1">中级调度</p>
+								<p class="p2">04</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--  -->
 		</div>
 	</div>
 </template>
@@ -120,13 +223,16 @@
 import bigTitle from '@/components/bigTitle.vue';
 import minMTitle from '@/components/min-m-title.vue';
 import xunjianPie from './components/xunjianPie.vue';
-
+import guzhangBar from './components/guzhangBar.vue';
+import jinggaoGauge from './components/jinggaoGauge.vue';
 export default {
     name: "YunXing",
     components: {
         bigTitle,
         minMTitle,
-        xunjianPie
+        xunjianPie,
+        guzhangBar,
+        jinggaoGauge
     },
     data () {
         return {
