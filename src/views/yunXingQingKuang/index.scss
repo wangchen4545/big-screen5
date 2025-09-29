@@ -32,29 +32,28 @@
 	margin: 0;
 }
 .yxqk-box {
-	width: 3480px;
-	height: 2160px;
-	background: #0d2c46 url("./img/06bg@2x.webp") no-repeat;
-	// position: relative;
-	// display: flex;
+	width: 1920px;
+	height: 1080px;
+	background: #0d2c46 url("./img/06bg.webp") no-repeat;
+	background-size: 100%;
 	.box-title {
 		display: flex;
-		justify-content: space-between;
-		width: 3480px;
-		height: 160px;
+		justify-content: space-around;
+		width: 1920px;
+		height: 40px;
 		margin: auto;
-		padding-top: 40px;
 		position: relative;
 		z-index: 2;
 		.updata {
+			width: 270px;
 			.updata-s1 {
 				width: 204px;
 				height: 56px;
 				font-family: AlibabaPuHuiTi, AlibabaPuHuiTi;
 				font-weight: 400;
-				font-size: 48px;
+				font-size: 12px;
 				color: #d1eeff;
-				line-height: 56px;
+				line-height: 40px;
 				text-shadow: 0px 0px 16px rgba(0, 60, 124, 0.5);
 				text-align: left;
 				font-style: normal;
@@ -63,52 +62,197 @@
 				width: 496px;
 				height: 56px;
 				font-family: Gotthard;
-				font-size: 56px;
+				font-size: 14px;
 				color: #d1eeff;
-				line-height: 56px;
-				letter-spacing: 4px;
+				line-height: 40px;
+				letter-spacing: 1px;
 				text-shadow: 0px 0px 16px rgba(0, 60, 124, 0.5);
 				text-align: left;
 				font-style: normal;
-				margin-left: 36px;
+				margin-left: 9px;
 			}
 		}
 		.title-text {
-			width: 1776px;
-			height: 136px;
+			width: 510px;
+			height: 40px;
 			font-family: jdlangzhengti, jdlangzhengti;
 			font-weight: normal;
-			font-size: 136px;
+			font-size: 40px;
 			color: #ffffff;
-			line-height: 56px;
-			letter-spacing: 12px;
-			text-shadow: 0px 16px 0px rgba(27, 53, 79, 0.4);
+			text-shadow: 0px 5px 0px rgba(27, 53, 79, 0.4);
 			text-align: center;
 			font-style: normal;
-			padding-top: 24px;
-			/* 	background: linear-gradient(270deg, #d1eeff 0%, #ffffff 100%); */
+			margin-top: 20px;
 		}
 		.time {
-			width: 1000px;
+			width: 280px;
 			.icon {
 				width: 48px;
 				height: 48px;
 			}
 			.time-s1,
 			.time-s2 {
-				width: 496px;
-				height: 56px;
+				width: 230px;
+				height: 40px;
 				font-family: Gotthard;
-				font-size: 56px;
+				font-size: 14px;
 				color: #d1eeff;
-				line-height: 56px;
-				letter-spacing: 4px;
+				line-height: 40px;
+				letter-spacing: 1px;
 				text-shadow: 0px 0px 16px rgba(0, 60, 124, 0.5);
 				text-align: left;
 				font-style: normal;
 			}
 			.time-s2 {
-				margin-left: 68px;
+				margin-left: 16px;
+			}
+		}
+	}
+	// 内容区
+	.yxqk-content{
+		width: 1920px;
+		height: 950px;
+		border: 1px solid red;
+		margin-top: 80px;
+		position: relative;
+		// 左侧
+		.left,
+		.right{
+			width: 456px;
+			height: 100%;
+			border: 1px solid yellow;
+			position: absolute;
+			.title{
+				width: 456px;
+				height: 50px;
+				background: url(img/title-bg.png) no-repeat;
+				background-size: 120%;
+				display: flex ;
+				justify-content: space-between;
+				align-items: center;
+				.txt1{
+					font-family: JDLANGZHENGTI--GB1, JDLANGZHENGTI--GB1;
+					font-weight: normal;
+					font-size: 22px;
+					color: #FFFFFF;
+					margin-left: 68px;
+				}
+				.txt2{
+					font-family: PingFangSC, PingFang SC;
+					font-size: 16px;
+					color: #C5E4F9;
+					margin-right: 10px;
+					cursor: pointer;
+				}
+			}
+			// 网络可用率
+			.content-one{
+				padding: 8px;
+				.data-details{
+					width: 225px;
+					height: 96px;
+					display: flex;
+					align-items: center;
+				}
+				.data-icon{
+					width: 72px;
+					height: 72px;
+					img{
+						width: 100%;
+					}
+				}
+				.data-description{
+					width: 155px;
+					height: 96px;
+					display: flex;
+					text-align: left;
+					flex-direction: column;
+					justify-content: center;
+					margin-left: 8px;
+					.txt1{
+						font-family: Gotthard;
+						font-size: 24px;
+						color: #FFFFFF;
+					}
+					.txt2{
+						font-family: PingFangSC, PingFang SC;
+						font-size: 16px;
+						color: #7FB5D9;
+					}
+				}
+			}
+			// 总体运维故障统计
+			.content-two{
+				padding: 8px;
+				margin-bottom: 35px;
+				.data-details{
+					width: 216px;
+					height: 120px;
+					display: flex;
+					margin-top: 25px;
+				}
+				.data-description{
+					width: 100%;
+					height: 120px;
+					display: flex;
+					text-align: left;
+					flex-direction: column;
+					margin-left: 8px;
+					background: url(img/ztyw-bg.png) no-repeat;
+					background-size: 100%;
+					.txt1{
+						text-align: left;
+						margin-top: 5px;
+						font-family: Gotthard;
+						font-size: 30px;
+						color: #FFFFFF;
+						text-shadow: 0px 0px 12px rgba(75,199,255,0.5);
+						span:nth-child(1) {
+							font-family: PingFangSC, PingFang SC;
+							font-size: 12px;
+							color: #7FB5D9;
+						}
+						span:nth-child(3) {
+							font-family: Gotthard;
+							font-size: 14px;
+							color: #FF6E38;
+						}
+					}
+					.txt2{
+						font-family: PingFangSC, PingFang SC;
+						font-size: 16px;
+						color: #7FB5D9;
+					}
+				}
+			}
+			// 总体运维工单情况
+			.content-three{
+				
+			}
+		}
+		.left{
+			top: 0;
+			left: 24px;
+		}
+		// 中间
+		.center{
+			width: 1280px;
+			height: 100%;
+			border: 1px solid blue;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -640px;
+		}
+		// 右侧
+		.right{
+			top: 0;
+			right: 24px;
+			.content-two{
+				width: 440px;
+				height: 145px;
+				padding: 8px;
+				margin-bottom: 35px;
 			}
 		}
 	}
