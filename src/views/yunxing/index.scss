@@ -432,4 +432,206 @@ p {
 			}
 		}
 	}
+	.fault {
+		margin: 152px 0 0 160px;
+		padding-left: 64px;
+		width: 976px;
+		height: 1808px;
+		box-sizing: border-box;
+		padding-right: 48px;
+		.failt-title {
+			color: #c5e4f9;
+			font-size: 48px;
+			text-align: left;
+			font-family: PingFangSC, PingFang SC;
+			height: 80px;
+			line-height: 80px;
+			padding-top: 64px;
+			display: flex;
+			justify-content: space-between;
+			p {
+			}
+			.failt-total {
+				color: #fff;
+				font-size: 52px;
+				margin: 0 20px;
+				font-family: Gotthard;
+			}
+		}
+		.failt-list {
+			height: 1530px;
+			overflow: auto;
+			margin-top: 32px;
+			.customTitle {
+				color: red;
+			}
+			:deep(.el-collapse-item__header) {
+				height: 192px;
+				position: relative;
+			}
+			:deep(.el-collapse-item__header.is-active) {
+				.title2 {
+					color: #fff;
+				}
+			}
+			:deep(.el-collapse-item__content) {
+				padding: 20px 65px;
+				border-radius: 16px;
+				background: linear-gradient(180deg, rgba(24, 65, 96, 0) 0%, rgba(24, 65, 96, 0.3) 100%);
+			}
+			.title {
+				color: #7fb5d9;
+				text-align: left;
+				.title1 {
+					font-size: 32px;
+					font-family: PingFangSC, PingFang SC;
+					&::before {
+						content: "";
+						display: inline-block;
+						width: 8px;
+						height: 32px;
+						margin-right: 15px;
+						background: linear-gradient(180deg, rgb(75 231 255), rgba(75, 231, 255, 0.5));
+					}
+				}
+				.title2 {
+					width: 744px;
+					font-size: 48px;
+					margin-top: 44px;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					font-family: PingFangSC, PingFang SC;
+				}
+				.status {
+					width: 300px;
+					height: 90px;
+					position: absolute;
+					top: 0;
+					right: 15px;
+					.status-txt {
+						font-size: 32px;
+						color: #7fb5d9;
+						position: absolute;
+						top: 20px;
+						left: 125px;
+					}
+					.complete {
+						width: 300px;
+						height: 90px;
+						background: url(img/tag_finish.png);
+					}
+				}
+			}
+			.txt1 {
+				color: #7fb5d9;
+				font-size: 40px;
+				float: left;
+				margin-right: 32px;
+				font-family: PingFangSC, PingFang SC;
+			}
+			.txt2 {
+				color: #c5e4f9;
+				font-size: 40px;
+				float: left;
+				text-align: left;
+				font-family: PingFangSC, PingFang SC;
+			}
+		}
+		.failt-list ::-webkit-scrollbar {
+			width: 5px;
+			height: 15px;
+		}
+		.failt-list ::-webkit-scrollbar-track {
+			display: none;
+		}
+		.failt-list ::-webkit-scrollbar-thumb {
+			background-color: red;
+			border-radius: 2.5px;
+		}
+		.failt-list ::-webkit-scrollbar-thumb:hover {
+			background-color: yellow;
+		}
+
+		/*滚动条整体宽度*/
+		.failt-list::-webkit-scrollbar {
+			width: 20px; /*宽对应滚动条的尺寸*/
+		}
+		/*轨道*/
+		.failt-list::-webkit-scrollbar-track {
+			display: none;
+		}
+		/*滑块*/
+		.failt-list::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background: rgba(127, 181, 217, 0.5);
+		}
+		:deep(.el-collapse) {
+			border: none;
+		}
+		:deep(.el-collapse-item) {
+			margin-top: 32px;
+		}
+		:deep(.el-collapse-item__header) {
+			background-color: transparent;
+			border: none;
+			padding-left: 65px;
+			background: url("./img/fault-title.png") no-repeat;
+		}
+		:deep(.el-collapse-item__header.is-active) {
+			background: url("./img/fault-title-active.png") no-repeat;
+		}
+		:deep(.el-collapse-item__wrap) {
+			border: none;
+			padding: 20px 0;
+			background: transparent;
+		}
+	}
+	:deep(.el-select) {
+		width: 184px;
+		height: 80px;
+		background: rgba(28, 69, 99, 0.5);
+		box-shadow: 0px 8px 0px -4px #4be7ff;
+		border-radius: 8px;
+	}
+	:deep(.el-input__inner) {
+		width: 184px;
+		height: 80px;
+		background: rgba(28, 69, 99, 0.5);
+		font-family: PingFangSC, PingFang SC;
+		font-weight: 500;
+		font-size: 40px;
+		color: #c5e4f9;
+		line-height: 80px;
+		text-align: right;
+		font-style: normal;
+		border: none;
+	}
+	:deep(.el-input__icon) {
+		width: 56px;
+	}
+	:deep(.el-input--suffix .el-input__inner) {
+		padding-right: 56px;
+		font-size: 40px;
+	}
+
+	:deep(.el-select .el-input .el-select__caret) {
+		font-size: 40px;
+	}
+	:deep(.el-select-dropdown) {
+		background: rgba(28, 69, 99, 0.5);
+		font-size: 40px;
+	}
+	:deep(.el-select-dropdown__item) {
+		background: rgba(28, 69, 99, 0.5);
+		height: 80px;
+		line-height: 80px;
+		font-size: 40px;
+		border: none;
+		color: #c5e4f9;
+	}
+
+	/* 折叠 */
+	.fault-statistics {
+	}
 }

@@ -274,6 +274,7 @@
 import LottieAnimation from './components/LottieAnimation.vue'
 import tagLoading from './img/tag_loading.json'
 import troubleFree from './img/trouble-free.json'
+
 export default {
 	name: 'ywfwBox',
 	components: { LottieAnimation },

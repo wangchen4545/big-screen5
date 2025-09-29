@@ -114,151 +114,154 @@
 			}
 		}
 	}
-	.box-content{
+	.box-content {
 		display: flex;
 		// 运维故障统计
-		.fault-statistics{
+		.fault-statistics {
 			width: 1776px;
 			height: 1872px;
 			margin-left: 128px;
 			position: relative;
 			z-index: 2;
-			.top{
+			.top {
 				display: flex;
 				justify-content: space-between;
 				margin-left: 240px;
 				height: 145px;
 				line-height: 145px;
-				.title{
+				.title {
 					color: #fff;
 					font-size: 72px;
 					font-family: jdlangzhengti, jdlangzhengti;
 				}
 			}
-			.distribution-title{
+			.distribution-title {
 				width: 325px;
 				margin: 45px 0 0 60px;
 				font-size: 52px;
-				color: #c5E4F9;
+				color: #c5e4f9;
 				font-family: jdlangzhengti, jdlangzhengti;
 			}
-			.total-failure{
+			.total-failure {
 				// width: 100%;
 				height: 250px;
 				// border: 1px solid #ccc;
-				.left{
+				.left {
 					margin-top: 40px;
-					.txt1{
-						color:#c5E4F9;
+					.txt1 {
+						color: #c5e4f9;
 						font-size: 44px;
 						font-family: PingFangSC, PingFang SC;
 					}
-					.txt2{
-						color:#fff;
+					.txt2 {
+						color: #fff;
 						font-size: 64px;
 						margin-top: 20px;
 						font-family: Gotthard;
 						text-shadow: 0 0 10px rgba(75, 199, 255, 0.3), 0 0 20px rgba(75, 199, 255, 0.3), 0 0 40px rgba(75, 199, 255, 0.3);
 					}
 				}
-				.right{
+				.right {
 					height: 100%;
 					margin-top: 60px;
-					.scale{
+					.scale {
 						height: 25px;
 					}
-					.scale1{
-						background-color: #E4C85D;
+					.scale1 {
+						background-color: #e4c85d;
 					}
-					.scale2{
-						background-color: #4BE7FF;
+					.scale2 {
+						background-color: #4be7ff;
 					}
-					.scale3{
-						background-color: #30A8FA;
+					.scale3 {
+						background-color: #30a8fa;
 					}
-					.scale4{
-						background-color: #7FB5D9;
+					.scale4 {
+						background-color: #7fb5d9;
 					}
-					.describe{
+					.describe {
 						display: flex;
 						height: 60px;
 						margin-top: 40px;
 						align-items: baseline;
-						.legend{
+						.legend {
 							width: 32px;
 							height: 32px;
 							background: #000;
 							transform: rotate(45deg);
 						}
-						.legend1{
-							background: #E4C85D;
+						.legend1 {
+							background: #e4c85d;
 						}
-						.legend2{
-							background: #4BE7FF;
+						.legend2 {
+							background: #4be7ff;
 						}
-						.legend3{
-							background: #30A8FA;
+						.legend3 {
+							background: #30a8fa;
 						}
-						.legend4{
-							background: #7FB5D9;
+						.legend4 {
+							background: #7fb5d9;
 						}
-						.txt1{
+						.txt1 {
 							font-size: 40px;
-							color: #7FB5D9;
+							color: #7fb5d9;
 							margin: 0 40px;
 							font-family: PingFangSC, PingFang SC;
 						}
-						.txt2{
+						.txt2 {
 							font-size: 40px;
-							color: #FFF;
+							color: #fff;
 							font-family: Gotthard;
 						}
 					}
 				}
 			}
-			.fault{
+			.fault {
 				margin: 75px 0 0 60px;
-				.failt-title{
-					color: #C5E4F9;
+				.failt-title {
+					color: #c5e4f9;
 					font-size: 48px;
 					text-align: left;
 					font-family: PingFangSC, PingFang SC;
-					.failt-total{
-						color: #FFF;
+					height: 80px;
+					line-height: 80px;
+					padding-top: 64px;
+					.failt-total {
+						color: #fff;
 						font-size: 52px;
 						margin: 0 20px;
 						font-family: Gotthard;
 					}
 				}
-				.failt-list{
+				.failt-list {
 					height: 1120px;
 					overflow: auto;
 					margin-top: 32px;
-					.customTitle{
+					.customTitle {
 						color: red;
 					}
-					:deep(.el-collapse-item__header){
+					:deep(.el-collapse-item__header) {
 						height: 192px;
 						position: relative;
 					}
-					:deep(.el-collapse-item__header.is-active){
-						.title2{
-							color: #FFF;
+					:deep(.el-collapse-item__header.is-active) {
+						.title2 {
+							color: #fff;
 						}
 					}
-					:deep(.el-collapse-item__content){
+					:deep(.el-collapse-item__content) {
 						padding: 20px 65px;
 						border-radius: 16px;
-						background: linear-gradient( 180deg, rgba(24,65,96,0) 0%, rgba(24,65,96,0.3) 100%);
+						background: linear-gradient(180deg, rgba(24, 65, 96, 0) 0%, rgba(24, 65, 96, 0.3) 100%);
 					}
-					.title{
-						color: #7FB5D9;
+					.title {
+						color: #7fb5d9;
 						text-align: left;
-						.title1{
+						.title1 {
 							font-size: 32px;
 							font-family: PingFangSC, PingFang SC;
-							&::before{
-								content: '';
+							&::before {
+								content: "";
 								display: inline-block;
 								width: 8px;
 								height: 32px;
@@ -266,7 +269,7 @@
 								background: linear-gradient(180deg, rgb(75 231 255), rgba(75, 231, 255, 0.5));
 							}
 						}
-						.title2{
+						.title2 {
 							width: 1580px;
 							font-size: 48px;
 							margin-top: 44px;
@@ -275,35 +278,35 @@
 							text-overflow: ellipsis;
 							font-family: PingFangSC, PingFang SC;
 						}
-						.status{
+						.status {
 							width: 300px;
 							height: 90px;
 							position: absolute;
 							top: 0;
 							right: 15px;
-							.status-txt{
+							.status-txt {
 								font-size: 32px;
-								color: #7FB5D9;
+								color: #7fb5d9;
 								position: absolute;
 								top: 20px;
 								left: 125px;
 							}
-							.complete{
+							.complete {
 								width: 300px;
 								height: 90px;
 								background: url(img/tag_finish.png);
 							}
 						}
 					}
-					.txt1{
-						color: #7FB5D9;
+					.txt1 {
+						color: #7fb5d9;
 						font-size: 40px;
 						float: left;
 						margin-right: 32px;
 						font-family: PingFangSC, PingFang SC;
 					}
-					.txt2{
-						color: #C5E4F9;
+					.txt2 {
+						color: #c5e4f9;
 						font-size: 40px;
 						float: left;
 						text-align: left;
@@ -324,31 +327,30 @@
 				.failt-list ::-webkit-scrollbar-thumb:hover {
 					background-color: yellow;
 				}
-				
+
 				/*滚动条整体宽度*/
-				.failt-list::-webkit-scrollbar{
-					 width: 20px;     /*宽对应滚动条的尺寸*/
+				.failt-list::-webkit-scrollbar {
+					width: 20px; /*宽对应滚动条的尺寸*/
 				}
 				/*轨道*/
-				.failt-list::-webkit-scrollbar-track{
+				.failt-list::-webkit-scrollbar-track {
 					display: none;
 				}
 				/*滑块*/
-				.failt-list::-webkit-scrollbar-thumb{
+				.failt-list::-webkit-scrollbar-thumb {
 					border-radius: 5px;
 					background: rgba(127, 181, 217, 0.5);
 				}
-				
 			}
 		}
 		// 审单情况  放行情况
 		.document-review,
-		.release-review{
+		.release-review {
 			width: 510px;
 			height: 1500px;
 			margin: 125px 0 0 140px;
 			.document-review-title,
-			.release-review-title{
+			.release-review-title {
 				color: #fff;
 				font-size: 80px;
 			}
@@ -356,11 +358,11 @@
 			:deep(.el-table tr),
 			:deep(.el-table th),
 			:deep(.el-table td),
-			:deep(.el-table__expanded-cell){
+			:deep(.el-table__expanded-cell) {
 				background: transparent;
 				border: none;
 			}
-			:deep(.el-table::before){
+			:deep(.el-table::before) {
 				height: 0;
 			}
 			:deep(.el-table td.el-table__cell div) {
@@ -369,33 +371,32 @@
 				font-size: 48px;
 				line-height: 100px;
 			}
-			:deep(.el-table__header-wrapper th .cell){
-				color: #557D97;
+			:deep(.el-table__header-wrapper th .cell) {
+				color: #557d97;
 				font-size: 40px;
 				height: 75px;
 				line-height: 75px;
 				font-family: PingFangSC, PingFang SC;
 			}
-			:deep(.el-table__row:nth-child(odd)){
+			:deep(.el-table__row:nth-child(odd)) {
 				background: linear-gradient(270deg, rgba(44, 87, 122, 0.25), rgba(44, 87, 122, 0.05));
 			}
-			:deep(.el-table__row td:nth-child(1) .cell){
-				color: #7FB5D9;
+			:deep(.el-table__row td:nth-child(1) .cell) {
+				color: #7fb5d9;
 				font-family: Gotthard;
 			}
-			:deep(.el-table__row td:nth-child(2) .cell){
-				color: #FFF;
+			:deep(.el-table__row td:nth-child(2) .cell) {
+				color: #fff;
 				font-family: Gotthard;
 			}
-			
 		}
 		// 当前受影响系统
-		.system{
+		.system {
 			width: 2500px;
 			height: 1500px;
-			margin:85px 0 0 30px;
+			margin: 85px 0 0 30px;
 			position: relative;
-			.system-num{
+			.system-num {
 				width: 400px;
 				height: 230px;
 				padding: 30px;
@@ -403,18 +404,18 @@
 				top: 120px;
 				left: 80px;
 				text-align: left;
-				.txt1{
-					color: #7FB5D9;
+				.txt1 {
+					color: #7fb5d9;
 					font-size: 40px;
 					font-family: PingFangSC, PingFang SC;
 				}
-				.txt2{
-					color: #7FB5D9;
+				.txt2 {
+					color: #7fb5d9;
 					font-size: 80px;
 					font-family: Gotthard;
 				}
 			}
-			.system-rotation{
+			.system-rotation {
 				width: 1600px;
 				height: 1600px;
 				position: absolute;
@@ -425,9 +426,11 @@
 				animation: rotation 2s linear infinite;
 			}
 			@keyframes rotation {
-				to {transform: rotate(360deg)}
+				to {
+					transform: rotate(360deg);
+				}
 			}
-			.system-loading{
+			.system-loading {
 				width: 1300px;
 				height: 500px;
 				position: absolute;
@@ -436,37 +439,37 @@
 				margin: -35px 0 0 -630px;
 				// background: url(img/loading.png) no-repeat;
 			}
-			.system-list-box{
+			.system-list-box {
 				width: 1400px;
 				height: 1400px;
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				margin: -500px 0 0 -700px;
-				.system-list{
+				.system-list {
 					width: 200px;
 					height: 200px;
 					position: absolute;
 					margin-left: -80px;
 					transform: translate(-50%, -50%);
 					transition: all 0.3s ease;
-					display: flex ;
+					display: flex;
 					align-items: center;
 					justify-content: center;
 					// transform: translate(calc(-50% + var(left, 0)), calc(-50% + var(top, 0)));
-					.system-list-img{
+					.system-list-img {
 						width: 160px;
 						height: 160px;
 						display: flex;
 						align-items: center;
 						justify-content: center;
 						background: url(img/system-fault.png);
-						color: #FFD432;
+						color: #ffd432;
 						font-size: 64px;
 						font-family: Gotthard;
 					}
-					.txt1{
-						color: #C5E4F9;
+					.txt1 {
+						color: #c5e4f9;
 						font-size: 44px;
 						position: absolute;
 						top: 160px;
@@ -476,54 +479,54 @@
 			}
 		}
 		// 放行情况
-		.release-review{
-			margin: 125px  0 0 35px;
+		.release-review {
+			margin: 125px 0 0 35px;
 		}
 		// 实施变更  未回复告警
-		.notice{
+		.notice {
 			width: 1800px;
 			height: 1800px;
 			margin-left: 135px;
 			.implement-changes,
-			.unresolved-alarm{
+			.unresolved-alarm {
 				.implement-changes-title,
-				.unresolved-alarm-title{
+				.unresolved-alarm-title {
 					height: 140px;
 					margin: 15px 0 0 250px;
 					text-align: left;
-					.txt1{
-						color: #FFF;
+					.txt1 {
+						color: #fff;
 						font-size: 72px;
 						font-family: JDLANGZHENGTI--GB1, JDLANGZHENGTI--GB1;
 					}
-					.txt2{
-						color: #7FB5D9;
+					.txt2 {
+						color: #7fb5d9;
 						font-size: 32px;
 						margin-left: 30px;
 						font-family: PlusJakartaSans-Italic_SemiBold, PlusJakartaSans-Italic_SemiBold;
 					}
 				}
 				.implement-changes-box,
-				.unresolved-alarm-box{
+				.unresolved-alarm-box {
 					width: 100%;
 					height: 800px;
 					.implement-changes-list,
-					.unresolved-alarm-list{
+					.unresolved-alarm-list {
 						height: 160px;
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
 						margin-top: 30px;
-						.list-img{
+						.list-img {
 							width: 96px;
 							height: 96px;
 							margin-left: 35px;
 							background: url(img/point.png) no-repeat;
 						}
-						.list-txt{
+						.list-txt {
 							width: calc(100% - 400px);
 							height: 100%;
-							color: #C5E4F9;
+							color: #c5e4f9;
 							font-size: 48px;
 							text-align: left;
 							margin-left: 30px;
@@ -531,15 +534,15 @@
 							align-items: center;
 							font-family: PingFangSC, PingFang SC;
 						}
-						.list-time{
+						.list-time {
 							width: 250px;
-							color: #7FB5D9;
+							color: #7fb5d9;
 							font-size: 48px;
 							font-family: Gotthard;
 						}
 					}
 					.implement-changes-list:nth-child(even),
-					.unresolved-alarm-list:nth-child(even){
+					.unresolved-alarm-list:nth-child(even) {
 						background: linear-gradient(270deg, rgba(44, 87, 122, 0.05), rgba(44, 87, 122, 0.25));
 					}
 				}

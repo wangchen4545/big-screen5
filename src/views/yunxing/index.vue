@@ -214,7 +214,89 @@
 					</div>
 				</div>
 			</div>
-			<!--  -->
+			<!--  调度故障-->
+			<div class="fault">
+				<div class="failt-title">
+					<p>共 <span class="failt-total">13</span>个中高级调度故障</p>
+					<el-select
+						v-model="selectDate"
+						:popper-append-to-body="false"
+						placeholder="请选择"
+					>
+						<el-option
+							v-for="item in selectTime"
+							:key="item.value"
+							:label="item.label"
+							:value="item.value"
+						>
+						</el-option>
+					</el-select>
+				</div>
+				<div class="failt-list">
+					<el-collapse
+						v-model="failtListAction"
+						accordion
+						@change="failtListChange"
+					>
+						<el-collapse-item
+							v-for="(item,index) in failtListActionList"
+							:key="index"
+							:name="index"
+						>
+							<template #title>
+								<div class="title">
+									<div class="status">
+										<span
+											v-if="item.status == 0"
+											class="status-txt"
+											>已完成</span
+										>
+										<span
+											v-else
+											class="status-txt"
+											>处理中</span
+										>
+										<div
+											v-if="item.status == 0"
+											class="complete"
+										></div>
+										<LottieAnimation
+											v-else
+											:animation-data="tagLoading"
+											:width="300"
+											:height="90"
+										/>
+									</div>
+									<div class="title1">{{item.level}}</div>
+									<div class="title2">{{item.instructions}}</div>
+								</div>
+							</template>
+							<el-row>
+								<el-col :span="12">
+									<span class="txt1">发现时间</span>
+									<span class="txt2">{{item.discoverytime}}</span>
+								</el-col>
+								<el-col :span="12">
+									<span class="txt1">调度级别</span>
+									<span class="txt2">{{item.dispatchLecel}}</span>
+								</el-col>
+								<el-col :span="12">
+									<span class="txt1">完成时间</span>
+									<span class="txt2">{{item.completionTime}}</span>
+								</el-col>
+								<el-col :span="12">
+									<span class="txt1">当前处理人</span>
+									<span class="txt2">{{item.userName}}</span>
+								</el-col>
+								<el-col :span="24">
+									<p class="txt1">故障详情</p>
+									<span class="txt2">{{item.details}}</span>
+								</el-col>
+							</el-row>
+						</el-collapse-item>
+					</el-collapse>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -225,6 +307,8 @@ import minMTitle from '@/components/min-m-title.vue';
 import xunjianPie from './components/xunjianPie.vue';
 import guzhangBar from './components/guzhangBar.vue';
 import jinggaoGauge from './components/jinggaoGauge.vue';
+import LottieAnimation from './components/LottieAnimation.vue'
+import tagLoading from './img/tag_loading.json'
 export default {
     name: "YunXing",
     components: {
@@ -232,10 +316,77 @@ export default {
         minMTitle,
         xunjianPie,
         guzhangBar,
-        jinggaoGauge
+        jinggaoGauge,
+        LottieAnimation
     },
     data () {
         return {
+            tagLoading,
+            selectTime: [
+				{
+					value: '1',
+					label: '近1月'
+				},
+				{
+					value: '2',
+					label: '近七天'
+				}
+			],
+            failtListAction: '1',
+            selectDate:'1',
+			// 运维故障数据
+			failtListActionList:[
+				{
+					status:'1',
+					level:'三级故障',
+					instructions:'UC同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常',
+					discoveryTime:'2025-10-02 12:30',
+					completionTime:'2025-10-04 12:30',
+					userName:'张三',
+					dispatchLecel:'中级调度',
+					details:'故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述'
+				},
+				{
+					status:'0',
+					level:'四级故障',
+					instructions:'UC同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常',
+					discoveryTime:'2025-10-02 12:30',
+					completionTime:'2025-10-04 12:30',
+					userName:'李四',
+					dispatchLecel:'中级调度',
+					details:'故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述'
+				},
+				{
+					status:'0',
+					level:'五级故障',
+					instructions:'UC同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常',
+					discoveryTime:'2025-10-02 12:30',
+					completionTime:'2025-10-04 12:30',
+					userName:'张三',
+					dispatchLecel:'低级调度',
+					details:'故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述'
+				},
+				{
+					status:'1',
+					level:'三级故障',
+					instructions:'UC同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常',
+					discoveryTime:'2025-10-02 12:30',
+					completionTime:'2025-10-04 12:30',
+					userName:'张三',
+					dispatchLecel:'中级调度',
+					details:'故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述'
+				},
+				{
+					status:'0',
+					level:'三级故障',
+					instructions:'UC同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常同意通信平台网站异常',
+					discoveryTime:'2025-10-02 12:30',
+					completionTime:'2025-10-04 12:30',
+					userName:'王五',
+					dispatchLecel:'中级调度',
+					details:'故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述故障描述'
+				}
+			],
         }
     },
     methods: {
