@@ -107,7 +107,32 @@
 					<chart-line></chart-line>
 				</div>
 			</div>
-			<!-- <div class="center"></div> -->
+			<div class="center">
+				<div class="txt-instructions">
+					<span class="txt1">骨干网可用率</span>
+					<span class="txt2">核心系统可用率</span>
+				</div>
+				<div class="data-details">
+					<div class="backbone-network">
+						<div>8</div>
+						<div>9</div>
+						<div style="color: #7FB5D9;">.</div>
+						<div>5</div>
+						<div>2</div>
+						<div>3</div>
+						<div style="color: #7FB5D9;">%</div>
+					</div>	
+					<div class="core-system">
+						<div>8</div>
+						<div>9</div>
+						<div style="color: #7FB5D9;">.</div>
+						<div>5</div>
+						<div>2</div>
+						<div>3</div>
+						<div style="color: #7FB5D9;">%</div>
+					</div>
+				</div>
+			</div>
 			<div class="right">
 				<div class="title">
 					<div class="txt1">本月告警处理情况</div>

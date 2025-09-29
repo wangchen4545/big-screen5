@@ -112,7 +112,6 @@
 	.yxqk-content{
 		width: 1920px;
 		height: 950px;
-		border: 1px solid red;
 		margin-top: 80px;
 		position: relative;
 		// 左侧
@@ -120,7 +119,6 @@
 		.right{
 			width: 456px;
 			height: 100%;
-			border: 1px solid yellow;
 			position: absolute;
 			.title{
 				width: 456px;
@@ -238,11 +236,61 @@
 		.center{
 			width: 1280px;
 			height: 100%;
-			border: 1px solid blue;
 			position: absolute;
 			top: 0;
 			left: 50%;
 			margin-left: -640px;
+			.txt-instructions{
+				width: 800px;
+				height: 25px;
+				margin: 20px auto 0;
+				.txt1,
+				.txt2{
+					font-family: PingFangSC, PingFang SC;
+					font-weight: 400;
+					font-size: 18px;
+					color: #7FB5D9;
+				}
+				.txt1{
+					float: left;
+					margin-left: 85px;
+				}
+				.txt2{
+					margin-left: -20px;
+				}
+			}
+			.data-details{
+				width: 800px;
+				height: 65px;
+				margin: 8px auto 0;
+				background: url(img/wlkyl-bg.png) no-repeat;
+				background-size: 100%;
+				display: flex ;
+				align-items: center;
+				justify-content: center;
+				.backbone-network{
+					margin-left: 85px;
+					width: 500px;
+				}
+				.core-system{
+					width: 545px;
+				}
+				.backbone-network,
+				.core-system{
+					display: flex;
+					div{
+						width: 36px;
+						height: 45px;
+						font-family: Digital, Digital;
+						font-weight: normal;
+						font-size: 36px;
+						color: #ffffff;
+						line-height: 45px;
+						text-align: center;
+						margin-right:6px;
+					}
+				}
+			}
 		}
 		// 右侧
 		.right{
